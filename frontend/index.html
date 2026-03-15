@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>EduAssist</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>EduAssist</h1>
+    <p>Your Smart Learning Companion</p>
+</header>
+
+<div class="chat-wrapper">
+
+    <div class="chat-header">
+        <span>Ask any academic question</span>
+    </div>
+
+    <div id="chatbox"></div>
+    <div class="study-plan">
+
+<h2>Create Study Plan</h2>
+
+<input type="date" id="examDate">
+
+<input type="text" id="subjects" placeholder="Subjects (comma separated)">
+
+<input type="number" id="hours" placeholder="Study hours per day">
+
+<button onclick="createStudyPlan()">Generate Plan</button>
+
+<div id="studyResult"></div>
+
+</div>
+
+    <div class="input-area">
+
+        <input 
+        type="text" 
+        id="userInput" 
+        placeholder="Type your question here..."
+        />
+
+        <button class="send-btn" onclick="sendMessage()">Send</button>
+
+        <button class="voice-btn" onclick="startVoice()">🎤</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
