@@ -1,244 +1,89 @@
-body{
-font-family: "Segoe UI", sans-serif;
-background:#f5f7fb;
-margin:0;
-display:flex;
-flex-direction:column;
-align-items:center;
-height:100vh;
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
 }
 
-/* header */
-
-.header{
-text-align:center;
-margin-top:30px;
+.header {
+    text-align: center;
+    background: #4a90e2;
+    color: white;
+    padding: 20px 0;
 }
 
-.header h1{
-color:#2c3e50;
-margin-bottom:5px;
+.main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.header p{
-color:#7f8c8d;
+.section {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    min-width: 300px;
 }
 
-/* chat container */
-
-.chat-wrapper{
-
-width:520px;
-height:600px;
-
-background:white;
-
-border-radius:12px;
-
-box-shadow:0 8px 25px rgba(0,0,0,0.1);
-
-display:flex;
-flex-direction:column;
-
-overflow:hidden;
-
-margin-top:20px;
-
+.chatbox, .quizbox {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background: #fefefe;
 }
 
-/* chat header */
-
-.chat-header{
-
-background:#4a90e2;
-
-color:white;
-
-padding:15px;
-
-font-size:14px;
-
+.user {
+    text-align: right;
+    margin: 5px 0;
 }
 
-/* chat messages */
-
-#chatbox{
-
-flex:1;
-
-padding:20px;
-
-overflow-y:auto;
-
-font-size:14px;
-
+.user span {
+    background: #d1e7dd;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
-/* user message */
-
-.user{
-
-text-align:right;
-
-margin:10px 0;
-
+.bot {
+    text-align: left;
+    margin: 5px 0;
 }
 
-.user span{
-
-background:#e8f1ff;
-
-padding:10px 14px;
-
-border-radius:12px;
-
-display:inline-block;
-
+.bot span {
+    background: #ffe5b4;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
-/* bot message */
-
-.bot{
-
-text-align:left;
-
-margin:10px 0;
-
+.input-area input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 5px;
 }
 
-.bot span{
-
-background:#f1f3f6;
-
-padding:10px 14px;
-
-border-radius:12px;
-
-display:inline-block;
-
+.input-area button {
+    padding: 8px 12px;
+    margin-right: 2px;
 }
 
-/* input area */
-
-.input-area{
-
-display:flex;
-
-border-top:1px solid #eee;
-
+button {
+    cursor: pointer;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
-/* input field */
-
-input{
-
-flex:1;
-
-border:none;
-
-padding:15px;
-
-font-size:14px;
-
-outline:none;
-
+button:hover {
+    background: #357ab8;
 }
 
-/* buttons */
-
-button{
-
-border:none;
-
-cursor:pointer;
-
-font-size:14px;
-
-}
-
-/* send button */
-
-.send-btn{
-
-background:#4a90e2;
-
-color:white;
-
-padding:0 20px;
-
-}
-
-.send-btn:hover{
-
-background:#357bd8;
-
-}
-
-/* voice button */
-
-.voice-btn{
-
-background:#27ae60;
-
-color:white;
-
-padding:0 15px;
-
-}
-
-.voice-btn:hover{
-
-background:#1f8a4d;
-
-}
-.study-plan{
-
-margin-top:20px;
-
-padding:20px;
-
-background:white;
-
-width:520px;
-
-border-radius:12px;
-
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-
-}
-
-.study-plan input{
-
-width:100%;
-
-padding:10px;
-
-margin:8px 0;
-
-border:1px solid #ccc;
-
-border-radius:6px;
-
-}
-
-.study-plan button{
-
-background:#4a90e2;
-
-color:white;
-
-padding:10px;
-
-border:none;
-
-border-radius:6px;
-
-cursor:pointer;
-
-}
-
-.study-plan button:hover{
-
-background:#357bd8;
-
+#studyResult, #quizFeedback {
+    margin-top: 10px;
 }
